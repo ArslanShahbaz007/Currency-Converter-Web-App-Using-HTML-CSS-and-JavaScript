@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            Currency Converter
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
+    </nav>
+    <div class="container">
+        <h1>Choose a Currency to Convert</h1>
+        <form action="/action.php" method="get">
+            <label for="quantity">Choose a quantity: </label>
+            <input type="number" name="quantity">
+            <label for="currency">Choose a currency: </label>
+            <select name="currency">
+                <option value="PKR">Pakistani Ruppee</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro</option>
+            </select> 
+            <button class="btn">Submit</button>
+        </form>
+        <div class="output">
+            <h1>Converted Currency Table </h1>
+            <table>
+            <thead>
+                <tr>
+                    <th>Currency</th>
+                    <th>Currency Code</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+</div>
+    <footer>
+        Copyright &copy; All rights reserved
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
